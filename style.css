@@ -1,0 +1,112 @@
+@import url('variables.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.column {
+    float: left;
+    text-align: justify;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--main-font-family);
+}
+
+p {
+    font-family: var(--main-font-family);
+    color: var(--primary-color);
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+@media (min-width: 800px) {
+    /* body {
+        background-color: #f33;
+        color: #fff;
+    } */
+
+    .column {
+        width: 25%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+/* @media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+} */
+
+@media (max-width: 800px) and (min-width: 500px) {
+    /* body {
+        background-color: #fff;
+        color: #f33; */
+}
+
+.column {
+    width: 50%;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+
+@media (max-width: 500px) {
+    /* body {
+        background-color: #f33;
+        color: #fff;
+    } */
+
+    .column {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(32, 68, 97);
+    margin: 0 auto;
+    /* transform: translate(100px, 200px);
+    transform: translateX(400px) 
+    transform: translateY(400px) 
+    transform: rotate(45deg) 
+    transform: scale(0.5)
+    transform: skewY(45deg); */
+    transition:transform 1s linear;
+}
+
+.box:hover {
+    /* transition:transform 1s linear; */
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: steps(3, end);
+    background-color: rgb(51, 68, 55);
+    /* transform: rotate(45deg); */
+    transform: scale(1.05)
+}

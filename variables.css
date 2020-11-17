@@ -1,0 +1,7 @@
+:root {
+    --main-font-family: sans-serif;
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: rgb(107, 148, 153);
+    --default-font-size: 18px;
+    --danger-btn: #f33
+}
